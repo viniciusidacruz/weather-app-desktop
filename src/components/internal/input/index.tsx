@@ -2,7 +2,7 @@ import { twMerge } from "tailwind-merge";
 
 import { FieldRootProps, FieldProps, FieldIconProps } from "./types";
 
-const Root = ({ children, className = "" }: FieldRootProps) => (
+export const Root = ({ children, className = "" }: FieldRootProps) => (
   <div
     className={twMerge(
       className,
@@ -13,11 +13,11 @@ const Root = ({ children, className = "" }: FieldRootProps) => (
   </div>
 );
 
-const Field = ({ className = "", ...restProps }: FieldProps) => (
+export const Field = ({ className = "", ...restProps }: FieldProps) => (
   <input
     className={twMerge(
       className,
-      "flex-1 text-slate-950 focus:outline-none placeholder:text-slate-600"
+      "flex-1 text-slate-950 border-none outline-none focus:outline-none placeholder:text-slate-600"
     )}
     {...restProps}
   />
