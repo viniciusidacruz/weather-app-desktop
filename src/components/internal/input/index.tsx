@@ -24,7 +24,10 @@ export const Field = ({ className = "", ...restProps }: FieldProps) => (
 );
 
 export const Icon = ({ icon: Element, className = "" }: FieldIconProps) => (
-  <Element className={twMerge(className, "text-blue-700")} />
+  <Element
+    data-testid="@field-icon"
+    className={twMerge(className, "text-blue-700")}
+  />
 );
 
 export const Input = {
