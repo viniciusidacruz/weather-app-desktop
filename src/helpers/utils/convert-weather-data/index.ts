@@ -1,8 +1,10 @@
-interface Temperature {
-  celsius: number;
-  fahrenheit: number;
-}
+import { Temperature } from "./types";
 
+/**
+ * Converte temperatura de Kelvin para Celsius e Fahrenheit.
+ * @param kelvin Temperatura em Kelvin
+ * @returns Objeto contendo a temperatura em Celsius e Fahrenheit
+ */
 export const convertKelvinToCelsiusAndFahrenheit = (
   kelvin: number | undefined
 ): Temperature => {

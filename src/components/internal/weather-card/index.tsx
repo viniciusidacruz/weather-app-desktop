@@ -37,6 +37,7 @@ export function WeatherCard() {
           <button
             className="bg-blue-100 p-2 rounded-full hover:bg-blue-200 transition ease-in"
             disabled={isLoading}
+            data-testid="@weather-card-search"
           >
             <Input.Icon icon={Search} className="cursor-pointer" />
           </button>

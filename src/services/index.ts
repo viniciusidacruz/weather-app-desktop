@@ -1,1 +1,1 @@
-export * from "./open-weather.find";
+export * from "./open-weather";
