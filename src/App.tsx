@@ -1,5 +1,3 @@
-import { MapPin, Search } from "lucide-react";
-
 import { WeatherCard } from "./components/internal/weather-card";
 
 export const App = () => (
