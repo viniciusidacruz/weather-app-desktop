@@ -1,10 +1,9 @@
 import { MapPin, Search } from "lucide-react";
-import { Input } from "./components/internal";
+
+import { WeatherCard } from "./components/internal/weather-card";
 
 export const App = () => (
-  <Input.Root>
-    <Input.Icon icon={MapPin} />
-    <Input.Field type="text" placeholder="Digite aqui" />
-    <Input.Icon icon={Search} />
-  </Input.Root>
+  <main className="w-full h-screen bg-slate-950 flex items-center justify-center px-4">
+    <WeatherCard />
+  </main>
 );

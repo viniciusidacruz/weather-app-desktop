@@ -6,7 +6,7 @@ export const Root = ({ children, className = "" }: FieldRootProps) => (
   <div
     className={twMerge(
       className,
-      "w-full flex gap-2 p-2 items-center bg-white"
+      "w-full flex gap-2 p-2 items-center bg-slate-100 rounded-xl"
     )}
   >
     {children}
